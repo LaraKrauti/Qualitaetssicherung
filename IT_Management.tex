@@ -21,9 +21,11 @@
 %% same distribution. (The sources need not necessarily be
 %% in the same archive or directory.)
 %%
+
 %% The first command in your LaTeX source must be the \documentclass command.
 \documentclass[sigconf]{acmart} 
 \settopmatter{printacmref=false}
+\usepackage{hyperref}  
 
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
@@ -32,7 +34,8 @@
     \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
 \setcopyright{none}
 \hyphenation{De-zi-mal-tren-nung}
-\renewcommand\footnotetextcopyrightpermission[1]{}
+\renewcommand
+\footnotetextcopyrightpermission[1]{}
 
 
 \usepackage{xcolor}
@@ -82,7 +85,7 @@
   \state{Baden-Württemberg}
   \country{Deutschland}  
 }
-\author{René Wikow}
+\author{René Wiskow}
 \email{rené.wiskow@student.reutlingen-university.de}
 \affiliation{%
   \city{Matrikelnummer: 801861}
@@ -156,16 +159,20 @@ erreicht sind.
 \maketitle
 
 \section{Einleitung - Elena}
-Unternehmen sind bestrebt ihre Prozesse, Produkte oder auch Dienstleistungen durch Frameworks und Zertifizierungen zu verbessern und deren Qualität stetig zu steigern. Die Qualität von Produkten ist entscheidend wie gut sich ein Unternehmen in dem jeweiligen Markt etablieren kann. Um im Bereich des IT Service Management (ITSM) einen messbaren Qualitätsstandard zu erhalten, wurde im Jahr 2005 die ISO/IEC 20000 IT Service veröffentlicht \footnote{https://www.iso.org/standard/51986.html, Zugriff: 31.05.2021}. Durch ITSM stellen Organisationen sicher, dass ihre IT-Services so funktionieren, dass diese durch Benutzer*innen und das Unternehmen selbst genutzt werden können \footnote{https://www.ibm.com/cloud/learn/it-service-managementtoc-what-is-it-CCWD9gs4, Zugriff: 31.05.2021}. Im Allgemeinen handelt es sich bei ITSM um eine Reihe von Richtlinien und Praktiken, die die Implementierung, Bereitstellung und Verwaltung von IT-Services festschreibt. Dabei liegt der Fokus auf den erklärte Bedürfnissen der Endnutzer*innen und den erklärten Zielen des Unternehmens.
+Unternehmen sind bestrebt ihre Prozesse, Produkte oder auch Dienstleistungen durch Frameworks und Zertifizierungen zu verbessern und deren Qualität stetig zu steigern. 
+Die Qualität von Produkten ist entscheidend wie gut sich ein Unternehmen in dem jeweiligen Markt etablieren kann. Im allgemeinen Sprachgebrauch steht das Wort \textit{Qualität} für die Beschaffenheit oder Eigenschaft einer Sache oder Person \footnote{https://www.duden.de/rechtschreibung/Qualitaet, Zugriff: 12.06.2021} In der Wirtschaft bezeichnet Qualität den Wert oder die Güte einer Sach- oder Dienstleistung aus Sicht des Anwenders/der Anwenderin\footnote{http://wirtschaftslexikon24.com/d/qualitaet/qualitaet.htm, Zugriff: 12.06.2021}. Die ISO 9000:2015 beschreibt, dass  \begin{quote} die Qualität der Produkte und Dienstleistungen   einer    Organisation durch die Fähigkeit bestimmt wird, Kunden zufrieden zu stellen sowie durch die  beabsichtigte  und  unabsichtliche  Auswirkung  auf relevante interessierte Parteien ~\cite[S.~10]{DeutscheGesellschaftfurQualitat.November2015}\end{quote}. Ergänzt wird die Definition mit der Beschreibung, dass \begin{quote} die Qualität von Produkten und Dienstleistungen nicht nur deren vorgesehene Funktion und Leistung umfasst, sondern auch ihren wahrgenommenen Wert und Nutzen für den Kunden~\cite[S.~10]{DeutscheGesellschaftfurQualitat.November2015}\end{quote}.
+Damit Frameworks die Verbesserung von Qualität eines Unternehmens und dessen Produkte, Dienstleistungen und Prozesse unterstützen können, müssen die Organisationen Richtlinien verfassen, die die Werte, Regeln und gewünschten Verhaltensweisen im Unternehmen festlegen. Um die Ziele einer Richtlinie zu erreichen, wird die Disziplin des Managements hinzugezogen, die ineinandergreifende Funktionen der Formulierung der Unternehmenspolitik sowie Organisation, Planung, Steuerung und Steuerung der Ressourcen eines Unternehmens umfasst\cite{KarlMichaelGauch.22.03.2021}. Für die Erweiterung auf den IT Bereich in Organisationen oder im Allgemeinen IT Unternehmen, wird das Management um das IT Management erweitert. Das IT Management ist im Groben für den professionellen Betrieb von großer Computersysteme zuständig \cite{KarlMichaelGauch.22.03.2021}. Indem das IT Management um den Bereich IT Service Management (ITSM) ergänzt wird, können verschiedene Handlungstätigkeiten in diesem Rahmen bearbeitet werden. Hierbei wurde im Jahr 2005 die ISO/IEC 2000 IT Service veröffentlicht, um einen Messbaren Qualitätsstandard zu erhalten \footnote{https://www.iso.org/standard/51986.html, Zugriff: 31.05.2021}. Durch ITSM stellen Organisationen sicher, dass ihre IT-Services so funktionieren, dass diese durch Benutzer*innen und das Unternehmen selbst genutzt werden können \footnote{https://www.ibm.com/cloud/learn/it-service-managementtoc-what-is-it-CCWD9gs4, Zugriff: 31.05.2021}. Im Allgemeinen handelt es sich bei ITSM um eine Reihe von Richtlinien und Praktiken, die die Implementierung, Bereitstellung und Verwaltung von IT-Services festschreibt. Dabei liegt der Fokus auf den erklärte Bedürfnissen der Endnutzer*innen und den erklärten Zielen des Unternehmens.
 Für die Implementierung und Dokumentation von ITSM dient das
-am weitesten verbreitete Best-Practice-Framework, die Information Technology Infrastructure Library (ITIL)\footnote{https://www.ibm.com/cloud/learn/it-service management toc-what-is-it-CCWD9gs4}. Das Framework ITIL bietet den Unternehmen die Rahmenbedingungen, um die Services optimal auf die Anforderung aus dem Business abzustimmen und regelmäßig auf die beste Unterstützung der Geschäftsprozesse zu überprüfen \cite{Beims.2015}. ITIL wird bei seiner Anwendung in fünf Lebenszyklusphasen eingeteilt. Die verschiedenen Lebenszyklusphasen sind gegliedert nach welchen Objekten sich die jeweilige Phase gerade richtet, welche Schlüsselkonzepte verwendet, welche Prozesse angewendet werden und welche Modelle in dem Zyklus zugrunde gelegt werden. Zudem sind die jeweiligen Dokumente und Ergebnisse jeder Phase festgelegt. Innerhalb der Service Transition sowie der Continual Service Improvment spielt die Qualitätssicherung
-eine wichtige Rolle. Somit müssen die in der Service Strategy identifizierten Services und Strategien in der Service Transition Phase getestet werden. Und auch die Ergebnisse aus der Service Design Phase wie zum Beispiel die Architekturen oder die Service-Level-Agreements müssen durch die Qualitätssicherung überprüft werden\cite{Beims.2015}.
+am weitesten verbreitete Best-Practice-Framework, die Information Technology Infrastructure Library (ITIL)\footnote{https://www.ibm.com/cloud/learn/it-service management toc-what-is-it-CCWD9gs4}. Das Framework ITIL bietet den Unternehmen die Rahmenbedingungen, um die Services optimal auf die Anforderung aus dem Business abzustimmen und regelmäßig auf die beste Unterstützung der Geschäftsprozesse zu überprüfen \cite{Beims.2015}. ITIL wird bei seiner Anwendung in fünf Lebenszyklusphasen eingeteilt. Die verschiedenen Lebenszyklusphasen sind gegliedert nach welchen Objekten sich die jeweilige Phase gerade richtet, welche Schlüsselkonzepte verwendet, welche Prozesse angewendet  und welche Modelle in dem Zyklus zugrunde gelegt werden. Zudem sind die jeweiligen Dokumente und Ergebnisse jeder Phase festgelegt. Innerhalb der Service Transition sowie der Continual Service Improvment spielt die Qualitätssicherung
+eine wichtige Rolle. Somit müssen die in der Service Strategy identifizierten Services und Strategien in der Service Transition Phase getestet werden. Und auch die Ergebnisse aus der Service Design Phase wie zum Beispiel die Architekturen oder die Service-Level-Agreements müssen durch die Qualitätssicherung überprüft werden \cite{Beims.2015}. \\
+Im Rahmen der Vorlesung IT-Management wurde die \textit{TopBlog AG} gegründet. Für den Aufbau der Organisation wurden fünf Arbeitsgruppen eingerichtet, die verschiedene Tätigkeitsfelder und Rollen im Rahmen von ITIL zu übernehmen hatten. Die dazu notwendigen theoretischen Hintergründe von ITIL im Allgemeinen sowie mit dem Fokus auf die Qualitätssicherung wird in \ref{chapter_theoretischeHintergünde} erläutert. Der genaue Rahmen, in dem das Framwork ITIL angewendet wird, beschreibt das Kapitel \ref{chapter_praktischedurchführung}  Praktische Durchführung. Die Reflektion des gesamten Projekts wird in Kapitel \ref{chapter_ReflektionDesProjekts} geschildert sowie ein Fazit in Kapitel \ref{chapter_Fazit}.
 
 \section{Theoretische Hintergünde - Elena}
+\label{chapter_theoretischeHintergünde}
 ITIL ist toll
 
 \subsection{ITIL}
-ITIL ist toll
+\ref{chapter_theoretischeHintergünde} blablalkdshdoishdioedhe8ohzeourd \nameref{chapter_theoretischeHintergünde}
 
 \subsection{Qualitätsicherung in ITIL - Lara}
 Qualitätssicherung spielt im ITIL Framework eine zentrale Rolle.
@@ -225,6 +232,7 @@ Der \textit{Component Test} wird parallel zur eigentlichen Service Entwicklung d
 \end{figure}
 
 \section{Praktische Durchführung}
+\label{chapter_praktischedurchführung}
 Macht Spaß
 
 \subsection{Qualitätssicherung im Planspiel - Lara}
@@ -294,9 +302,11 @@ Team)
 Excel
 
 \section{REFLEKTION DES PROJEKTS}
+\label{chapter_ReflektionDesProjekts}
 Testen ... 
 
 \section{FAZIT - RENE }
+\label{chapter_Fazit}
 
 \appendix
 \section{Anhänge}
