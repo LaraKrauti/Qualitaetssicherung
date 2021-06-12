@@ -35,6 +35,8 @@
 \renewcommand\footnotetextcopyrightpermission[1]{}
 
 
+\usepackage{xcolor}
+
 %%
 %% Submission ID.
 %% Use this when submitting an article to a sponsored event. You'll
@@ -194,6 +196,7 @@ bdbsjd
 \subsubsection{Continuous Service Improvment}
 
 \subsubsection{Testing}
+\label{sec:testing_background}
 Der Testing Prozess stellt die Einhaltung des Vertrags, welcher
 mit dem Kunden über die Qualitätsanforderungen abgeschlossen
 wird, sicher. Der Nutzen des Kunden steht daher im Mittelpunkt. Es
@@ -216,7 +219,7 @@ Bei der Entwicklung einer geeigneten Teststrategie wurde sich an das Service V-M
 Der \textit{Component Test} wird parallel zur eigentlichen Service Entwicklung definiert. Dieser prüft, ob die einzelnen Komponenten, bzw. eine Gruppe an Komponenten, die geforderte Spezifikationen erfüllt. Es wird die direkte technische Umsetzung der Services getestet. Der \textit{Release Package Test} testet anschließend, ob die erstellten Services fehlerfrei bereitgestellt (deployed) werden können. Der \textit{Operational Readiness Test} bezieht sich auf die Ressourcen, welche vorhanden sein müssen, um den Service bereitzustellen. Damit sind nicht nurtechnische, sondern auch Humanressourcen gemeint. Es wird also genau so danach gefragt, ob genügend Speicher vorhanden ist, wie auch, ob der Support für den jeweiligen Service geleistet werden kann. Der \textit{Acceptance Test} erfolgt im direkten Zusammenspiel mit dem Kunden. Hier wird sichergegangen, dass der Service alle gestellten Kundenanforderungen zufriedenstellend erfüllt. An letzter Stelle steht die \textit{Service Validierung}. Dazu wird geprüft, ob der Service alle Verträge einhält. 
 
 \begin{figure}[th]
-\includegraphics[width=\columnwidth]{V-Modell.jpg}
+\includegraphics[width=\columnwidth]{images/V-Modell.jpg}
 \caption{Service V-Modell \cite{Beims.2015} }
 \label{fig:vmodell}
 \end{figure}
@@ -232,30 +235,40 @@ Macht Spaß
 \subsubsection{Prozessdefinition zur Qualitätssicherung.}
 Hier kommt ein Text
 
-\subsection{Teststrategie-Rene}
+\subsection{Testing-Rene}
+
+In diesem Abschnitt wird aufgeführt, wie mithilfe des Service V-Modells Tests entwickelt und durchgeführt wurden. 
+
+\subsubsection{Component Test}
+Die Component Tests beziehen sich wie in Abschnitt \ref{sec:testing_background} beschrieben auf die direkte Implementierung der Service-Anforderungen. Die Frage, welche die Component Tests beantworten sollen lautet daher: Werden die Anforderungen in der Implementation zufriedenstellend umgesetzt? Um diese Frage zu beantworten zunächst für jede Anforderung an den Service eine Schwachstellenanalyse durchgeführt. Diese Schwachstellen wurden anschließend mit einem Risikostatus gewichtet. Dabei wurden vier verschiedene Gewichtungen definiert, welche hier aufsteigend aufgelistet sind: \textit{Geringfügig, Mittelmäßig, Kritisch} und \textit{Katastrophal}. Diese Gewichtung wurde vorgenommen, um die Dringlichkeit einer Anpassung zu dokumentieren. Zu jeder Anforderung wurde weiterhin ein oder mehrere Annahmekriterien definiert, welches sich direkt aus dem vom Business Team erstellten Service Portfolio ableiten. Im folgenden wurden die Component Tests durch den Softwaretester durchgeführt und dokumentiert, ob der Test bestanden wurde und von wem er durchgeführt wurde. Weiterhin wurden Auffälligkeiten genau dokumentiert, um eventuelle Fragen zu klären oder mehr Informationen zu gescheiterten Tests zu liefern. Die Testergebnisse wurden gebündelt für einzelene Komponenten an den \textit{Head of Development} zurückgemeldet. Weiterhin wurde eine Metrik für die Qualität einzelner Komponenten eingeführt. Nach dieser hat eine Komponente eine Qualität von 100\% , wenn alle auf ihr ausgeführten Tests bestanden sind. Bei der Berechnung der Metrik wird die Gewichtung des Risikos mit einbezogen indem den einzelnen Gewichtungen aufsteigend Werte von eins bis vier zugewiesen wurden. Wurde ein Test nicht bestanden, wird der gewichtete Anteil von den 100\% abgezogen. Als zufriedenstellende Qualität einer Komponente wurde ein Wert von über 90\% festgelegt.  Eine Beispieldokumentation für einen Component Test findet sich in Tabelle \ref{table:component}. 
+
+\begin{table*}[]
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\textbf{Komponente} & \textbf{Annahmekriterium}                                                                                            & \textbf{Schwachstellenanalyse}                                                                                                & \textbf{Risikobewertung} & \textbf{Testergebnis} & \textbf{Verantwortlich}                                                      & \textbf{Anmerkungen} \\ \hline
+Registrierung      & \begin{tabular}[c]{@{}l@{}}Reg. über: \\ E-Mail\\ Passwort\\ Name\\ Nachname\\ Benutzername\end{tabular}              & \begin{tabular}[c]{@{}l@{}}Es können Texte welche \\ keine E-Mail Adresse sind\\ als E-Mail angegeben \\ werden.\end{tabular} & Katastrophal             & Bestanden             & \begin{tabular}[c]{@{}l@{}}Software-Testerin\\ Lara Krautmacher\end{tabular} & -                    \\ \hline
+Registrierung      & \begin{tabular}[c]{@{}l@{}}Person bekommt \\ nach Registrierung\\ einen Bestätigungs-\\ link\\ per Mail\end{tabular} & \begin{tabular}[c]{@{}l@{}}Link in E-Mail ist nicht\\ gültig oder E-Mail \\ kommt nicht an.\end{tabular}                      & Kritisch                 & Bestanden             & \begin{tabular}[c]{@{}l@{}}Software-Testerin\\ Elena Kirsch\end{tabular}     & -                    \\ \hline
+...                & ..                                                                                                                   & ...                                                                                                                           & ...                      & ...                   & ...                                                                          & ...                  \\ \hline
+\end{tabular}
+\caption{Component Tests Registrierung}
+\label{table:component}
+\end{table*}  
+
+\
+
 \begin{itemize}
-\item Beim Entwickeln einer Teststrategie an das Service V-Modell gehalten
-\item Einzelne Tests dementsprechend direkt aus Entwicklungs/Design- Phasen abgeleitet
-\item V-Modell in fünf Phasen
+\color{red}
+\item Weiterhin wurde der interne Service des Service Desks, das Redmine Portal, getestet. Hier wurde ähnlich vorgegangen
 \end{itemize}
 
-\textbf{Component Test}
-\begin{itemize}
-\item Erfüllt Komponente(ngruppen) Spezifikation?
-\item ZB: Funktioniert Anmeldung etc.
-\item Mit Entwicklern abgesprochen und Plan erstellt (Gantt)
-\item Bezieht sich direkt auf die Implementation, bzw die Umsetzung der technischen Anforderungen
-\item Getestet wurde die Implementierung des Blogging Portals
-\item Dazu wurden zunächst die Annahme- bzw Abnahmekritierien aus den Anforderungen des Business Teams abgeleitet
-\item Als nächstes wurden mögliche Schwachstellen identifiziert und Tests in Hinblick auf diese durchgeführt
-\item Jedem Test wurde außerdem eine Priorität zugeordnet - Weiterhin wurde der interne Service des Service Desks, das Redmine Portal, getestet. Hier wurde ähnlich vorgegangen
-\end{itemize}
-\textbf{Release Package Test}
+
+\subsubsection{Release Package Test}
 \begin{itemize}
 \item Release- und Deployment Manager verantwortlich?
 \item Funktionieren Release Optionen? Funktioniert Deployment?
 \end{itemize}
-\textbf{Operational Readiness Test}
+
+\subsubsection{Operational Readiness Test}
 \begin{itemize}
 \item Sind wir in der Lage den Service so zu betreiben wie der Kunde es erwartet? Warranty
 \item Fähigkeiten?
@@ -263,13 +276,15 @@ Hier kommt ein Text
 \item Mitarbeiter?
 \item Support organisiert? (Service Desk)
 \end{itemize}
-\textbf{Acceptance Test}
+
+\subsubsection{Acceptance Test}
 \begin{itemize}
 \item Erfolgt mit Kunden
 \item Service Abnahme wird mit Kunden durchgegangen (Business
 Team)
 \end{itemize}
-\textbf{Service Validierung}
+
+\subsubsection{Service Validierung}
 \begin{itemize}
 \item Validierung der Angebote und Verträge
 \item Werden Verträge eingehalten?
@@ -283,6 +298,14 @@ Testen ...
 
 \section{FAZIT - RENE }
 
+\appendix
+\section{Anhänge}
+
+\begin{figure*}[th]
+\includegraphics[height=\textheight]{images/Gantt.jpg}
+\caption{Projektplan - Qualitätssicherung}
+\label{fig:gantt}
+\end{figure*}
 
 
 %%
