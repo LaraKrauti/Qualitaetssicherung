@@ -163,14 +163,77 @@ Damit Frameworks die Verbesserung von Qualität eines Unternehmens und dessen Pr
 Für die Implementierung und Dokumentation von ITSM dient das
 am weitesten verbreitete Best-Practice-Framework, die Information Technology Infrastructure Library (ITIL)\footnote{https://www.ibm.com/cloud/learn/it-service management toc-what-is-it-CCWD9gs4}. Das Framework ITIL bietet den Unternehmen die Rahmenbedingungen, um die Services optimal auf die Anforderung aus dem Business abzustimmen und regelmäßig auf die beste Unterstützung der Geschäftsprozesse zu überprüfen \cite{Beims.2015}. ITIL wird bei seiner Anwendung in fünf Lebenszyklusphasen eingeteilt. Die verschiedenen Lebenszyklusphasen sind gegliedert nach welchen Objekten sich die jeweilige Phase gerade richtet, welche Schlüsselkonzepte verwendet, welche Prozesse angewendet  und welche Modelle in dem Zyklus zugrunde gelegt werden. Zudem sind die jeweiligen Dokumente und Ergebnisse jeder Phase festgelegt. Innerhalb der Service Transition sowie der Continual Service Improvment spielt die Qualitätssicherung
 eine wichtige Rolle. Somit müssen die in der Service Strategy identifizierten Services und Strategien in der Service Transition Phase getestet werden. Und auch die Ergebnisse aus der Service Design Phase wie zum Beispiel die Architekturen oder die Service-Level-Agreements müssen durch die Qualitätssicherung überprüft werden \cite{Beims.2015}. \\
-Im Rahmen der Vorlesung IT-Management wurde die \textit{TopBlog AG} gegründet. Für den Aufbau der Organisation wurden fünf Arbeitsgruppen eingerichtet, die verschiedene Tätigkeitsfelder und Rollen im Rahmen von ITIL zu übernehmen hatten. Die dazu notwendigen theoretischen Hintergründe von ITIL im Allgemeinen sowie mit dem Fokus auf die Qualitätssicherung wird in \ref{chapter_theoretischeHintergünde} erläutert. Der genaue Rahmen, in dem das Framwork ITIL angewendet wird, beschreibt das Kapitel \ref{chapter_praktischedurchführung}  Praktische Durchführung. Die Reflektion des gesamten Projekts wird in Kapitel \ref{chapter_ReflektionDesProjekts} geschildert sowie ein Fazit in Kapitel \ref{chapter_Fazit}.
+Im Rahmen der Vorlesung IT-Management wurde die \textit{TopBlog AG} gegründet. Für den Aufbau der Organisation wurden fünf Arbeitsgruppen eingerichtet, die verschiedene Tätigkeitsfelder und Rollen im Rahmen von ITIL zu übernehmen hatten. Die dazu notwendigen theoretischen Hintergründe von ITIL im Allgemeinen sowie mit dem Fokus auf die Qualitätssicherung wird in \ref{chapter_theoretischeHintergünde} erläutert. Der genaue Rahmen, in dem das Framework ITIL angewendet wird, beschreibt das Kapitel \ref{chapter_praktischedurchführung}  Praktische Durchführung. Die Reflektion des gesamten Projekts wird in Kapitel \ref{chapter_ReflektionDesProjekts} geschildert sowie ein Fazit in Kapitel \ref{chapter_Fazit}.
 
 \section{Theoretische Hintergünde - Elena}
 \label{chapter_theoretischeHintergünde}
-ITIL ist toll
-
+Das Kapitel \nameref{chapter_theoretischeHintergünde} beschreibt im ersten Abschnitt das Framework ITIL in seinen Grundzügen und den dazugehörigen Rollen in den jeweiligen Phasen. Im zweiten Abschnitt wird das Thema Qualitätssicherung als Teil von ITIL genauer beschrieben und dessen Kernpunkte. 
 \subsection{ITIL}
-\ref{chapter_theoretischeHintergünde} blablalkdshdoishdioedhe8ohzeourd \nameref{chapter_theoretischeHintergünde}
+Die unternehmerische Grundhaltung der Geschäftsprozessorientierung beinhaltet, dass sämtliche betriebliche Aktivitäten als Kombination einzelner oder verschiedener Prozesse angesehen werden. Damit diese Grundhaltung erreicht werden kann, müssen Ziele definiert werden, an denen sich die Erbringung der IT-Services ausrichtet ~\cite[S.~2]{Beims.2015}. Die Möglichkeiten der IT-Organisation und die Anforderungen des Kunden/der Kundin über die zu erbringenden Services müssen deckungsgleich sein, um die Ziele zu erreichen. ITIL befasst sich mit der Identifizierung des Kundenbedarfs und der entsprechenden Gestaltung des Services. Grundsätzlich ist ITIL keine definierte Vorschrift, sondern ein allgemeines Framework, das auf Erfahrungen basiert und unverbindliche Empfehlungen zur Verfügung stellt \cite{KarlMichaelGauch.24.03.2021}. Allgemein verfolgt ITIL demnach das Ziel, Erfahrungen
+aus der Welt des IT-Service-Managements aufzuschreiben, sie zu generalisieren und bei Bedarf auch durch Erfahrungen aus anderen Bereichen, wie der Wirtschaft oder der Wissenschaft, zu ergänzen ~\cite[S.~12]{Beims.2015}. Services sollen im Rahmen von ITIL optimal auf Anforderungen aus dem Geschäft abgestimmt sein und sie sollen regelmäßig darauf überprüft werden die Geschäftsprozesse optimal zu unterstützen. Ein zusätzlicher Punkt ist, dass ITIL prozessorientiert arbeitet und unabhängig ist von Hierarchien \cite{KarlMichaelGauch.24.03.2021}. \\
+Voraussetzung für das Planspiel ist in diesem Fall Version 3 von ITIL, die sich bei der Beschreibung und Zielsetzung leicht verändert hat im Bezug auf die vorherigen Versionen.\\
+Die Struktur der IT Infrastructure Library ist als Service Lifecycle aufgebaut und beschreibt den Lebenszyklus des IT-Services von der Erfassung der Anforderung über die Gestaltung, Implementierung und den Betrieb bis hin zur kontinuierlichen Anpassung der Servicequalität und letztlich der Außerbetriebnahme. Der Fokus bei Version 3 liegt bei den zu liefernden Services. Entsprechen dieser Struktur, beinhaltet die Version von ITIL sechs Bücher ~\cite[S.~15]{Beims.2015}, \cite{KarlMichaelGauch.24.03.2021}: 
+\begin{itemize}
+\item[1.) ]Service Strategy
+\item[2.) ]Service Design
+\item[3.) ]Service Transition
+\item[4.) ]Service Operation
+\item[5.) ]Continual Service Improvement
+\end{itemize}
+Services spielen eine zentrale Rolle im Rahmen von ITIL v3. Bei einem Service handelt es sich Dienstleistung, die es ermöglicht Wert für den Kunden bereitzustellen, durch den Ergebnisse ermöglicht werden, die Kunden erreichen wollen ohne spezifische Kosten und Risiken zu tragen \cite{KarlMichaelGauch.24.03.2021}.\\
+Der Service Lifecycle bildet einen organisatorischen Rahmen für die Aktivitäten des IT-Service-Managements.
+\begin{figure}[htb]\includegraphics[width=\columnwidth]{Images/06169041-6a7c-4ae5-a525-146450101b65.PNG}\caption{Service Lifecycle}
+~\protect\cite[S.~17]{Beims.2015}\label{fig:serviceLife}\end{figure} 
+Abbildung \ref{fig:serviceLife} ziegt die Zusammenhänge bei der Gestaltung des IT-Service-Managements. Das Verhaltensmuster der Mitarbeiter in der IT-Organisation wird auf Basis des Service Lifecycle gebildet. Der Umgang mit den Ereignissen in der Serviceerbringung und demnach auch die Qualität der IT-Services wird durch die Verhaltensmuster beeinflusst.  \\
+Im Folgenden soll ein kurzer, inhaltlicher Überblick der einzelnen Elemente aus dem Service Lifecycle gegeben werden 
+\subsubsection{Elemente des Service Lifecycles}
+\begin{itemize}
+\item \textbf{Service Strategy} 
+\begin{itemize}
+\item[•]Identifiziert Strategien, Prozesse und Kunden 
+\item[•] Schöpft Chancen aus 
+\item[•] Analyse der Vermögenswerte 
+\item[•] Bildet den Ausgangspunkt für alle Aktivitäten des Service Lifecycle und bietet Unterstützung und Anleitung für Design, Entwicklung und Implementierung von Service Management
+\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item \textbf{Service Design}
+\begin{itemize}
+\item[•]Identifiziert Strategien, Prozesse und Kunden 
+\item[•] Schöpft Chancen aus 
+\item[•] Analyse der Vermögenswerte 
+\item[•] Bildet den Ausgangspunkt für alle Aktivitäten des Service Lifecycle und bietet Unterstützung und Anleitung für Design, Entwicklung und Implementierung von Service Management
+\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item \textbf{Service Design}
+\begin{itemize}
+\item[•]Identifiziert Strategien, Prozesse und Kunden 
+\item[•] Schöpft Chancen aus 
+\item[•] Analyse der Vermögenswerte 
+\item[•] Bildet den Ausgangspunkt für alle Aktivitäten des Service Lifecycle und bietet Unterstützung und Anleitung für Design, Entwicklung und Implementierung von Service Management
+\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item \textbf{Service Design}
+\begin{itemize}
+\item[•]Identifiziert Strategien, Prozesse und Kunden 
+\item[•] Schöpft Chancen aus 
+\item[•] Analyse der Vermögenswerte 
+\item[•] Bildet den Ausgangspunkt für alle Aktivitäten des Service Lifecycle und bietet Unterstützung und Anleitung für Design, Entwicklung und Implementierung von Service Management
+\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item \textbf{Service Design}
+\begin{itemize}
+\item[•]Identifiziert Strategien, Prozesse und Kunden 
+\item[•] Schöpft Chancen aus 
+\item[•] Analyse der Vermögenswerte 
+\item[•] Bildet den Ausgangspunkt für alle Aktivitäten des Service Lifecycle und bietet Unterstützung und Anleitung für Design, Entwicklung und Implementierung von Service Management
+\end{itemize}
+\end{itemize}
+
+
 
 \subsection{Qualitätsicherung in ITIL - Lara}
 Qualitätssicherung spielt im ITIL Framework eine zentrale Rolle.
