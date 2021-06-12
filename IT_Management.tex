@@ -252,12 +252,12 @@ Hier kommt ein Text
 In diesem Abschnitt wird aufgeführt, wie mithilfe des Service V-Modells Tests entwickelt und durchgeführt wurden. 
 
 \subsubsection{Component Test}
-Die Component Tests beziehen sich wie in Abschnitt \ref{sec:testing_background} beschrieben auf die direkte Implementierung der Service-Anforderungen. Die Frage, welche die Component Tests beantworten sollen lautet daher: Werden die Anforderungen in der Implementation zufriedenstellend umgesetzt? Um diese Frage zu beantworten zunächst für jede Anforderung an den Service eine Schwachstellenanalyse durchgeführt. Diese Schwachstellen wurden anschließend mit einem Risikostatus gewichtet. Dabei wurden vier verschiedene Gewichtungen definiert, welche hier aufsteigend aufgelistet sind: \textit{Geringfügig, Mittelmäßig, Kritisch} und \textit{Katastrophal}. Diese Gewichtung wurde vorgenommen, um die Dringlichkeit einer Anpassung zu dokumentieren. Zu jeder Anforderung wurde weiterhin ein oder mehrere Annahmekriterien definiert, welches sich direkt aus dem vom Business Team erstellten Service Portfolio ableiten. Im folgenden wurden die Component Tests durch den Softwaretester durchgeführt und dokumentiert, ob der Test bestanden wurde und von wem er durchgeführt wurde. Weiterhin wurden Auffälligkeiten genau dokumentiert, um eventuelle Fragen zu klären oder mehr Informationen zu gescheiterten Tests zu liefern. Die Testergebnisse wurden gebündelt für einzelene Komponenten an den \textit{Head of Development} zurückgemeldet. Weiterhin wurde eine Metrik für die Qualität einzelner Komponenten eingeführt. Nach dieser hat eine Komponente eine Qualität von 100\% , wenn alle auf ihr ausgeführten Tests bestanden sind. Bei der Berechnung der Metrik wird die Gewichtung des Risikos mit einbezogen indem den einzelnen Gewichtungen aufsteigend Werte von eins bis vier zugewiesen wurden. Wurde ein Test nicht bestanden, wird der gewichtete Anteil von den 100\% abgezogen. Als zufriedenstellende Qualität einer Komponente wurde ein Wert von über 90\% festgelegt.  Eine Beispieldokumentation für einen Component Test findet sich in Tabelle \ref{table:component}. 
+Die Component Tests beziehen sich wie in Abschnitt \ref{sec:testing_background} beschrieben auf die direkte Implementierung der Service-Anforderungen. Die Frage, welche die Component Tests beantworten sollen lautet daher: Werden die Anforderungen in der Implementation zufriedenstellend umgesetzt? Um diese Frage zu beantworten zunächst für jede Anforderung an den Service eine Schwachstellenanalyse durchgeführt. Diese Schwachstellen wurden anschließend mit einem Risikostatus gewichtet. Dabei wurden vier verschiedene Gewichtungen definiert, welche hier aufsteigend aufgelistet sind: \textit{Geringfügig, Mittelmäßig, Kritisch} und \textit{Katastrophal}. Diese Gewichtung wurde vorgenommen, um die Dringlichkeit einer Anpassung zu dokumentieren. Zu jeder Anforderung wurde weiterhin ein oder mehrere Annahmekriterien definiert, welches sich direkt aus dem vom Business Team erstellten Service Portfolio ableiten. Im folgenden wurden die Component Tests durch den Softwaretester durchgeführt und dokumentiert, ob der Test bestanden wurde und von wem er durchgeführt wurde. Weiterhin wurden Auffälligkeiten genau dokumentiert, um eventuelle Fragen zu klären oder mehr Informationen zu gescheiterten Tests zu liefern. Die Testergebnisse wurden gebündelt für einzelene Komponenten an den \textit{Head of Development} zurückgemeldet. Weiterhin wurde eine Metrik für die Qualität einzelner Komponenten eingeführt. Nach dieser hat eine Komponente eine Qualität von 100\% , wenn alle auf ihr ausgeführten Tests bestanden sind. Bei der Berechnung der Metrik wird die Gewichtung des Risikos mit einbezogen indem den einzelnen Gewichtungen aufsteigend Werte von eins bis vier zugewiesen wurden. Wurde ein Test nicht bestanden, wird der gewichtete Anteil von den 100\% abgezogen. Als zufriedenstellende Qualität einer Komponente wurde ein Wert von über 95\% festgelegt. Eine mittlere Qualität besteht bei 85-95\% und eine niedrige Qualität bei unter 85\%.  Eine Beispieldokumentation für einen Component Test findet sich in Tabelle \ref{table:component}. 
 
 \begin{table*}[]
 \begin{tabular}{|l|l|l|l|l|l|l|}
 \hline
-\textbf{Komponente} & \textbf{Annahmekriterium}                                                                                            & \textbf{Schwachstellenanalyse}                                                                                                & \textbf{Risikobewertung} & \textbf{Testergebnis} & \textbf{Verantwortlich}                                                      & \textbf{Anmerkungen} \\ \hline
+\textbf{Komponente} & \textbf{Annahmekriterium}                                                                                            & \textbf{Schwachstellenanalyse}                                                                                                & \textbf{Risikobewertung} & \textbf{Testergebnis} & \textbf{Verantwortlich}                                                      & \textbf{Notiz} \\ \hline
 Registrierung      & \begin{tabular}[c]{@{}l@{}}Reg. über: \\ E-Mail\\ Passwort\\ Name\\ Nachname\\ Benutzername\end{tabular}              & \begin{tabular}[c]{@{}l@{}}Es können Texte welche \\ keine E-Mail Adresse sind\\ als E-Mail angegeben \\ werden.\end{tabular} & Katastrophal             & Bestanden             & \begin{tabular}[c]{@{}l@{}}Software-Testerin\\ Lara Krautmacher\end{tabular} & -                    \\ \hline
 Registrierung      & \begin{tabular}[c]{@{}l@{}}Person bekommt \\ nach Registrierung\\ einen Bestätigungs-\\ link\\ per Mail\end{tabular} & \begin{tabular}[c]{@{}l@{}}Link in E-Mail ist nicht\\ gültig oder E-Mail \\ kommt nicht an.\end{tabular}                      & Kritisch                 & Bestanden             & \begin{tabular}[c]{@{}l@{}}Software-Testerin\\ Elena Kirsch\end{tabular}     & -                    \\ \hline
 ...                & ..                                                                                                                   & ...                                                                                                                           & ...                      & ...                   & ...                                                                          & ...                  \\ \hline
@@ -266,7 +266,6 @@ Registrierung      & \begin{tabular}[c]{@{}l@{}}Person bekommt \\ nach Registrie
 \label{table:component}
 \end{table*}  
 
-\
 
 \begin{itemize}
 \color{red}
@@ -275,12 +274,13 @@ Registrierung      & \begin{tabular}[c]{@{}l@{}}Person bekommt \\ nach Registrie
 
 
 \subsubsection{Release Package Test}
-\begin{itemize}
-\item Release- und Deployment Manager verantwortlich?
-\item Funktionieren Release Optionen? Funktioniert Deployment?
-\end{itemize}
+
+Für die Durchführung der Release Package Tests ist in erster Linie die \textit{Release- und Deployment Managerin} verantwortlich. Dazu wurden jedoch von der Qualitätssicherung KPIs definiert, welche eine Aussage über den Release Prozess treffen.  Der erste KPI betrifft die Anzahl erfolgreicher Deployments. Diese Metrik wird in Prozent erfasst und nutzt folgende Staffelung: Eine hohe Qualität ist erreicht, wenn der KPI größer als 90\% ist. Eine mittlere Qualität besteht bei genau 95\% und eine niedrige Qualität unter 95\%. Der zweite KPI ist die Dauer der Deployments in Minuten. Hier besteht eine hohe Qualität bei weniger als 10 Minuten, eine mittlere bei genau 10 Minuten und eine niedrige Qualität bei mehr als 10 Minuten Deployment-Zeit. 
 
 \subsubsection{Operational Readiness Test}
+
+Der \textit{Operational Readiness Test} richtet sich an das Service Desk Team. 
+
 \begin{itemize}
 \item Sind wir in der Lage den Service so zu betreiben wie der Kunde es erwartet? Warranty
 \item Fähigkeiten?
