@@ -25,6 +25,9 @@
 %% The first command in your LaTeX source must be the \documentclass command.
 \documentclass[sigconf]{acmart} 
 \settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+
+
 \usepackage{hyperref}  
 
 %%
@@ -157,6 +160,7 @@ erreicht sind.
 %% This command processes the author and affiliation and title
 %% information and builds the first part of the formatted document.
 \maketitle
+\pagestyle{plain} % removes running headers
 
 \section{Einleitung - Elena}
 Unternehmen sind bestrebt ihre Prozesse, Produkte oder auch Dienstleistungen durch Frameworks und Zertifizierungen zu verbessern und deren Qualität stetig zu steigern. 
@@ -308,6 +312,14 @@ Testen ...
 \section{FAZIT - RENE }
 \label{chapter_Fazit}
 
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{itmanagement.bib}
+
+
 \appendix
 \section{Anhänge}
 
@@ -317,12 +329,6 @@ Testen ...
 \label{fig:gantt}
 \end{figure*}
 
-
-%%
-%% The next two lines define the bibliography style to be used, and
-%% the bibliography file.
-\bibliographystyle{ACM-Reference-Format}
-\bibliography{itmanagement.bib}
 
 
 
