@@ -237,7 +237,55 @@ Risikomanagement
 \end{itemize}
 \begin{figure}[htb]\includegraphics[width=\columnwidth]{Images/16724a53-da3e-455d-a7a2-ef43ced2e51e.PNG}\caption{Zusammenspiel der einzelnen Elemente im Service-Lifecycle}
 ~\protect\cite[S.~18]{Beims.2015}\label{fig:zusammenspiel} \end{figure}
-Abbildung \ref{fig:zusammenspiel} zeigt das Zusammenspiel der einzelnen Elemente des Service-Lifecycle und zeigt somit einmal den Ablauf einer Struktur von ITIL. Zunächst müssen die Business Anforderungen benannt werden. Aufgrund der genannten Anforderungen werden in der Service Strategy Phase die Strategien gesammelten, die durchgeführt werden müssen, um die Anforderungen umsetzen zu können. Hier können beispielsweise das Service Portfolio Management, das Financial Management oder das Business Relationship Management zugrunde gelegt werden. Als Model dienen hier das Kano Model oder 
+Abbildung \ref{fig:zusammenspiel} stellt das Zusammenspiel der einzelnen Elemente des Service-Lifecycle dar und zeigt somit einmal den Ablauf einer Struktur von ITIL. Zunächst müssen die Business Anforderungen benannt werden. Dadurch kann in dieser Phase bereits sichergestellt werden, dass jede Stufe des Service Lifecycle am Business orientiert ist. Es werden Strategien entwickelt, Chancen und Möglichkeiten identifiziert sowie Ziele definiert, um die Gestaltung neuer IT Services anzutreiben. 
+Die Service Strategy umfasst fünf Prozesse, die durch unterschiedliche Prozessziele die Arten von Services welche Kunden bzw. am Markt angeboten werden sollen, identifizieren. Zur Unterstützung werden dazu zwei Modelle hinzugezogen. Zum einen das Kano Modell, das den Zusammenhang zwischen dem Erreichen bestimmter Eigenschaften eines Produktes / einer Dienstleistung und der erwarteten Zufriedenheit von Kunden beschreibt\footnote{https://de.wikipedia.org/wiki/Kano-Modell-cite-note-1, Zugriff: 13.06.2021}. Bei dem zweiten Modell handelt es sich um den 4P - Marketing Mix. Das Modell beschäftig sich mit der Produkt-, Preis-, Vertriebs- und Kommunikationspolitik. Das Ergebnis der Servise Strategy sind Service Modelle, eine Business Impact Analyse sowie weitere Dokumente\footnote{ITIL On A Page, ITIL TrainingZone.com}. \\
+Nachdem diese Stufe abgearbeitet ist, geht es weiter mit dem Service Design. Durch die Ergebnisse aus der Service Strategy können nun konkrete Anforderungen definiert werden. In dieser Phase werden neue Services entworfen, aber auch Änderungen und/oder Verbesserungen vorhandener Services durchgeführt. 
+Wie in Abbildung \ref{fig:zusammenspiel} dargestellt, handelt es sich in dieser Phase um einen iterativen Prozess. Die Anforderungen können um weitere Punkte ergänzt werden, diese Services müssen entwickelt und getestet werden, wodurch eine Evaluierung stattfindet. Je nach Ergebnis der Evaluierung müssen die nun bestehenden Services gegebenenfalls nochmal verändert oder verbessert werden. Auch diese Disziplin besteht aus acht Prozessen, die die Entwicklung und Veränderung bzw. Verbesserung von Servicen durchführt. Die Ergebnisse dieser Phase sind unter anderem die sogenannten Service-Level Agreements, Architektur oder Service Design Packages\footnote{ITIL On A Page, ITIL TrainingZone.com}. 
+\\
+Die Service Transition verfolgt das Ziel, dass die entwickelten Services der letzten Phase aufgebaut und ausgerollt werden. Zudem werden durch geeignete Test- und Change Modelle sichergestellt, dass Änderungen an den Services koordiniert ablaufen. Die Ergebnisse dieser Phase sind unter anderem eine Content-Management-System, ein Service Knowledge System oder ein Change schedule.\\
+Nachdem die Services entwickelt sind und verschiedene Systeme bereitgestellt sind für einen reibungslosen Ablauf, dient die Service Operation Stufe dazu, dass die IT Services effektiv und effizient erbracht werden. In dieser Stufe müssen Anwenderfragen erfüllt und Probleme gelöst werden. Auch hier stehen fünf Prozesse zur Verfügung, die durch unterschiedliche Funktionen gemeinsam das Ziel erarbeiten. In dieser Phase entstehen vor allem technische Dokumentationen und auch Übungsmaterial\footnote{ITIL On A Page, ITIL TrainingZone.com}. 
+\\
+Infolge der vorherigen Stufen können immer wieder Qualitätsmängel auftreten. Um diesen entgegen zu wirken und aus den Erfolgen sowie Misserfolgen der Vergangenheit zu lernen, setzt das Continual Service Improvement Methoden des Qualitätsmanagements ein\footnote{ITIL On A Page, ITIL TrainingZone.com}. 
+\subsubsection{Rollen im Service Lifecycle} 
+Aufgrund der hohen Anzahl an Phasen und Prozesse im Service Lifecycle, benötigt es die Definition von unterschiedlichen Rollen, die in den fünf Phasen verschiedene Aufgaben übernehmen. Der ITIL On Pager benennt vier generische Rollen innerhalb des Service Lifecycles: 
+\begin{itemize}
+\item[•]\textbf{Service Owner}\\
+Verantwortlich gegenüber dem Kunden für die Initiierung, den Übergang und die laufende Wartung sowie Unterstützung eines  Dienstes und Support eines bestimmten Services ~\cite[S.~9]{KarlMichaelGauch.24.03.2021}.
+\item[•]\textbf{Process Owner} \\
+Verantwortlich, dass Service seine Ziele enstprechend der Prozessdefinition erfüllt ~\cite[S.~9]{KarlMichaelGauch.24.03.2021}.
+\item[•]\textbf{Process Manager}\\
+Verantwortet das Operativemanagement eines Prozesses. Es kann mehrere Process Manager für einen Prozess geben ~\cite[S.~9]{KarlMichaelGauch.24.03.2021}. 
+\item[•]\textbf{Process Practitioner}\\
+Die Durchführung einer oder mehrerer Prozessaktivitäten liegt in dessen Verantwortung ~\cite[S.~9]{KarlMichaelGauch.24.03.2021}.
+\end{itemize}
+\subsubsection{Key Performance Indicators} 
+Der Key Performance Indicator (KPI) ist eine Leistungskennzahl durch die eine Analyse zu Erfolg und Misserfolg eines Unternehmens entwickelt werden kann. Im Bereich ITIL v3 werden in jeder Stufe des Service Lifecycles KPI's ermittelt, um festzustellen wie gut oder schlecht die Services in der jeweiligen Phase sind. 
+In den folgenden Tabellen werden für jede Phase beispielhaft solche KPIs dargestellt. 
+\begin{table}[!ht]
+  \caption{Beispielhafte KPIs der Service Strategy}
+  \label{tab:freq_1}
+  \begin{tabular}{c|c}
+    \toprule
+    \textbf{Leistungskennzahlen}&\textbf{Definition}\\
+    \toprule
+    \shortstack{Anzahl geplanter\\ neuer Services }& \shortstack{Prozentsatz neu entwickelter \\Services, die aufgrund\\ eines strategischen Reviews \\initiiert worden sind} \\
+    \hline
+   \shortstack{ Anzahl von \\Neukunden} &\shortstack{Anzahl neu\\ gewonnener Kunden} \\
+    \hline
+    \shortstack{Anzahl von\\ Kundenbeschwerden }& \shortstack{Anzahl der \\eingegangenen \\Kundenbeschwerden}\\
+    \hline
+    \shortstack{Einhaltung \\Projektressourcen } &\shortstack{Anteil der Kosten,\\ der die geplanten\\ Projektkosten überschreitet}\\
+  \toprule
+\end{tabular}
+\end{table}
+Tabelle \ref{tab:freq_1} zeigt Beispiele, die die Leistung eines Unternehmens in der Service Strategy bewertbar macht. 
+
+\subsection{Qualitätsicherung in ITIL - Lara}
+Qualitätssicherung spielt im ITIL Framework eine zentrale Rolle.
+Dies ist darauf zurückzuführen, dass ein Grundgedanke von ITSM
+darin besteht die Qualität und Quantität von IT-Services zu planen,
+überwachen und steuern [1]. An dieser Stelle wird beschrieben in
+welchen Bereichen von ITIL Qualitätssicherung verortet ist, welche Tätigkeiten sie umfasst und nach welchen Ansätzen diese strukturiert und ausgeführt werden können.
 
 
 \subsection{Qualitätsicherung in ITIL - Lara}
