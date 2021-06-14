@@ -127,7 +127,7 @@
 \begin{abstract}
 Qualitätssicherung spielt eine zentrale Rolle in jedem Unternehmen.
 Reibungslose Abläufe interner Prozesse sowie die Erfüllung
-von Ansprüchen an ein Endprodukt werden durch die Qualitätssicherung
+von Ansprüchen an ein Endprodukt werden durch sie
 garantiert. Im Zuge dieser Seminararbeit wird
 anhand eines Planspiels evaluiert inwieweit die IT Infrastructure
 Library die Organisation und Durchführung einer effizienten Qualitätssicherung
@@ -163,12 +163,13 @@ erreicht sind.
 \pagestyle{plain} % removes running headers
 
 \section{Einleitung - Elena}
+\label{sec:intro}
 Unternehmen sind bestrebt ihre Prozesse, Produkte oder auch Dienstleistungen durch Frameworks und Zertifizierungen zu verbessern und deren Qualität stetig zu steigern. 
 Die Qualität von Produkten ist entscheidend wie gut sich ein Unternehmen in dem jeweiligen Markt etablieren kann. Im allgemeinen Sprachgebrauch steht das Wort \textit{Qualität} für die Beschaffenheit oder Eigenschaft einer Sache oder Person \footnote{https://www.duden.de/rechtschreibung/Qualitaet, Zugriff: 12.06.2021} In der Wirtschaft bezeichnet Qualität den Wert oder die Güte einer Sach- oder Dienstleistung aus Sicht des Anwenders/der Anwenderin\footnote{http://wirtschaftslexikon24.com/d/qualitaet/qualitaet.htm, Zugriff: 12.06.2021}. Die ISO 9000:2015 beschreibt, dass  \begin{quote} die Qualität der Produkte und Dienstleistungen   einer    Organisation durch die Fähigkeit bestimmt wird, Kunden zufrieden zu stellen sowie durch die  beabsichtigte  und  unabsichtliche  Auswirkung  auf relevante interessierte Parteien ~\cite[S.~10]{DeutscheGesellschaftfurQualitat.November2015}\end{quote}. Ergänzt wird die Definition mit der Beschreibung, dass \begin{quote} die Qualität von Produkten und Dienstleistungen nicht nur deren vorgesehene Funktion und Leistung umfasst, sondern auch ihren wahrgenommenen Wert und Nutzen für den Kunden~\cite[S.~10]{DeutscheGesellschaftfurQualitat.November2015}\end{quote}.
-Damit Frameworks die Verbesserung von Qualität eines Unternehmens und dessen Produkte, Dienstleistungen und Prozesse unterstützen können, müssen die Organisationen Richtlinien verfassen, die die Werte, Regeln und gewünschten Verhaltensweisen im Unternehmen festlegen. Um die Ziele einer Richtlinie zu erreichen, wird die Disziplin des Managements hinzugezogen, die ineinandergreifende Funktionen der Formulierung der Unternehmenspolitik sowie Organisation, Planung, Steuerung und Steuerung der Ressourcen eines Unternehmens umfasst\cite{KarlMichaelGauch.22.03.2021}. Für die Erweiterung auf den IT Bereich in Organisationen oder im Allgemeinen IT Unternehmen, wird das Management um das IT Management erweitert. Das IT Management ist im Groben für den professionellen Betrieb von großer Computersysteme zuständig \cite{KarlMichaelGauch.22.03.2021}. Indem das IT Management um den Bereich IT Service Management (ITSM) ergänzt wird, können verschiedene Handlungstätigkeiten in diesem Rahmen bearbeitet werden. Hierbei wurde im Jahr 2005 die ISO/IEC 2000 IT Service veröffentlicht, um einen Messbaren Qualitätsstandard zu erhalten \footnote{https://www.iso.org/standard/51986.html, Zugriff: 31.05.2021}. Durch ITSM stellen Organisationen sicher, dass ihre IT-Services so funktionieren, dass diese durch Benutzer*innen und das Unternehmen selbst genutzt werden können \footnote{https://www.ibm.com/cloud/learn/it-service-managementtoc-what-is-it-CCWD9gs4, Zugriff: 31.05.2021}. Im Allgemeinen handelt es sich bei ITSM um eine Reihe von Richtlinien und Praktiken, die die Implementierung, Bereitstellung und Verwaltung von IT-Services festschreibt. Dabei liegt der Fokus auf den erklärte Bedürfnissen der Endnutzer*innen und den erklärten Zielen des Unternehmens.
+Damit Frameworks die Verbesserung von Qualität eines Unternehmens und dessen Produkte, Dienstleistungen und Prozesse unterstützen können, müssen die Organisationen Richtlinien verfassen, die die Werte, Regeln und gewünschten Verhaltensweisen im Unternehmen festlegen. Um die Ziele einer Richtlinie zu erreichen, wird die Disziplin des Managements hinzugezogen, die ineinandergreifende Funktionen der Formulierung der Unternehmenspolitik sowie Organisation, Planung, Steuerung und Steuerung der Ressourcen eines Unternehmens umfasst\cite{KarlMichaelGauch.22.03.2021}. Für die Erweiterung auf den IT Bereich in Organisationen oder im Allgemeinen IT Unternehmen, wird das Management um das IT Management erweitert. Das IT Management ist im Groben für den professionellen Betrieb von großen Computersystemen zuständig \cite{KarlMichaelGauch.22.03.2021}. Indem das IT Management um den Bereich IT Service Management (ITSM) ergänzt wird, können verschiedene Handlungstätigkeiten in diesem Rahmen bearbeitet werden. Hierbei wurde im Jahr 2005 die ISO/IEC 2000 IT Service veröffentlicht, um einen messbaren Qualitätsstandard zu erhalten \footnote{https://www.iso.org/standard/51986.html, Zugriff: 31.05.2021}. Durch ITSM stellen Organisationen sicher, dass ihre IT-Services so funktionieren, dass diese durch Benutzer*innen und das Unternehmen selbst genutzt werden können\footnote{https://www.ibm.com/cloud/learn/it-service-managementtoc-what-is-it-CCWD9gs4, Zugriff: 31.05.2021}. Im Allgemeinen handelt es sich bei ITSM um eine Reihe von Richtlinien und Praktiken, die die Implementierung, Bereitstellung und Verwaltung von IT-Services festschreibt. Dabei liegt der Fokus auf den erklärte Bedürfnissen der Endnutzer*innen und den erklärten Zielen des Unternehmens.
 Für die Implementierung und Dokumentation von ITSM dient das
-am weitesten verbreitete Best-Practice-Framework, die Information Technology Infrastructure Library (ITIL)\footnote{https://www.ibm.com/cloud/learn/it-service management toc-what-is-it-CCWD9gs4}. Das Framework ITIL bietet den Unternehmen die Rahmenbedingungen, um die Services optimal auf die Anforderung aus dem Business abzustimmen und regelmäßig auf die beste Unterstützung der Geschäftsprozesse zu überprüfen \cite{Beims.2015}. ITIL wird bei seiner Anwendung in fünf Lebenszyklusphasen eingeteilt. Die verschiedenen Lebenszyklusphasen sind gegliedert nach welchen Objekten sich die jeweilige Phase gerade richtet, welche Schlüsselkonzepte verwendet, welche Prozesse angewendet  und welche Modelle in dem Zyklus zugrunde gelegt werden. Zudem sind die jeweiligen Dokumente und Ergebnisse jeder Phase festgelegt. Innerhalb der Service Transition sowie der Continual Service Improvment spielt die Qualitätssicherung
-eine wichtige Rolle. Somit müssen die in der Service Strategy identifizierten Services und Strategien in der Service Transition Phase getestet werden. Und auch die Ergebnisse aus der Service Design Phase wie zum Beispiel die Architekturen oder die Service-Level-Agreements müssen durch die Qualitätssicherung überprüft werden \cite{Beims.2015}. \\
+am weitesten verbreitete Best-Practice-Framework, die Information Technology Infrastructure Library (ITIL)\footnote{https://www.ibm.com/cloud/learn/it-service management toc-what-is-it-CCWD9gs4}. Das Framework ITIL bietet den Unternehmen die Rahmenbedingungen, um die Services optimal auf die Anforderung aus dem Business abzustimmen und regelmäßig auf die beste Unterstützung der Geschäftsprozesse zu überprüfen \cite{Beims.2015}. ITIL wird bei seiner Anwendung in fünf Lebenszyklusphasen eingeteilt. Die verschiedenen Lebenszyklusphasen sind gegliedert nach welchen Objekten sich die jeweilige Phase gerade richtet, welche Schlüsselkonzepte verwendet, welche Prozesse angewendet  und welche Modelle in dem Zyklus zugrunde gelegt werden. Zudem sind die jeweiligen Dokumente und Ergebnisse jeder Phase festgelegt. Innerhalb der Service Transition sowie der Continual Service Improvement spielt die Qualitätssicherung
+eine wichtige Rolle. Somit müssen die in der Service Strategy identifizierten Services und Strategien in der Service Transition Phase getestet werden. Und auch die Ergebnisse aus der Service Design Phase, wie zum Beispiel die Architekturen oder die Service-Level-Agreements, müssen durch die Qualitätssicherung überprüft werden \cite{Beims.2015}. \\
 Im Rahmen der Vorlesung IT-Management wurde die \textit{TopBlog AG} gegründet. Für den Aufbau der Organisation wurden fünf Arbeitsgruppen eingerichtet, die verschiedene Tätigkeitsfelder und Rollen im Rahmen von ITIL zu übernehmen hatten. Die dazu notwendigen theoretischen Hintergründe von ITIL im Allgemeinen sowie mit dem Fokus auf die Qualitätssicherung wird in \ref{chapter_theoretischeHintergünde} erläutert. Der genaue Rahmen, in dem das Framework ITIL angewendet wird, beschreibt das Kapitel \ref{chapter_praktischedurchführung}  Praktische Durchführung. Die Reflektion des gesamten Projekts wird in Kapitel \ref{chapter_ReflektionDesProjekts} geschildert sowie ein Fazit in Kapitel \ref{chapter_Fazit}.
 
 \section{Theoretische Hintergünde - Elena}
@@ -186,12 +187,13 @@ Die Struktur der IT Infrastructure Library ist als Service Lifecycle aufgebaut u
 \item[4.) ]Service Operation
 \item[5.) ]Continual Service Improvement
 \end{itemize}
-Services spielen eine zentrale Rolle im Rahmen von ITIL v3. Bei einem Service handelt es sich Dienstleistung, die es ermöglicht Wert für den Kunden bereitzustellen, durch den Ergebnisse ermöglicht werden, die Kunden erreichen wollen ohne spezifische Kosten und Risiken zu tragen \cite{KarlMichaelGauch.24.03.2021}.\\
+Services spielen eine zentrale Rolle im Rahmen von ITIL v3. Bei einem Service handelt es sich um eine Dienstleistung, die es ermöglicht Wert für den Kunden bereitzustellen, durch den Ergebnisse ermöglicht werden, die Kunden erreichen wollen ohne spezifische Kosten und Risiken zu tragen \cite{KarlMichaelGauch.24.03.2021}.\\
 Der Service Lifecycle bildet einen organisatorischen Rahmen für die Aktivitäten des IT-Service-Managements.
 \begin{figure}[htb]\includegraphics[width=\columnwidth]{Images/06169041-6a7c-4ae5-a525-146450101b65.PNG}\caption{Service Lifecycle}
 ~\protect\cite[S.~17]{Beims.2015}\label{fig:serviceLife}\end{figure} 
-Abbildung \ref{fig:serviceLife} ziegt die Zusammenhänge bei der Gestaltung des IT-Service-Managements. Das Verhaltensmuster der Mitarbeiter in der IT-Organisation wird auf Basis des Service Lifecycle gebildet. Der Umgang mit den Ereignissen in der Serviceerbringung und demnach auch die Qualität der IT-Services wird durch die Verhaltensmuster beeinflusst.  \\
-Im Folgenden soll ein kurzer, inhaltlicher Überblick der einzelnen Elemente aus dem Service Lifecycle gegeben werden 
+Abbildung \ref{fig:serviceLife} zeigt die Zusammenhänge bei der Gestaltung des IT-Service-Managements. Das Verhaltensmuster der Mitarbeiter in der IT-Organisation wird auf Basis des Service Lifecycle gebildet. Der Umgang mit den Ereignissen in der Serviceerbringung und demnach auch die Qualität der IT-Services wird durch die Verhaltensmuster beeinflusst.  \\
+Im Folgenden soll ein kurzer, inhaltlicher Überblick der einzelnen Elemente aus dem Service Lifecycle gegeben werden.
+
 \subsubsection{Elemente des Service Lifecycles}
 \begin{itemize}
 \item \textbf{Service Strategy} 
@@ -205,8 +207,8 @@ Im Folgenden soll ein kurzer, inhaltlicher Überblick der einzelnen Elemente aus
 \begin{itemize}
 \item \textbf{Service Design}
 \begin{itemize}
-\item[•]Setzt die Vorgaben aus Service Strategy um und liefert Vorgaben und Vorlagen für die
-\item[•]Erstellung adäquater und innovativer IT-Services. Betrachtet sowohl die Gestaltung neuer und veränderter Services als auch der Service-Management-Prozesse 
+\item[•]Setzt die Vorgaben aus Service Strategy um und liefert Vorgaben und Vorlagen für die Erstellung adäquater und innovativer IT-Services
+\item[•]. Betrachtet sowohl die Gestaltung neuer und veränderter Services als auch der Service-Management-Prozesse 
 \end{itemize}
 \end{itemize}
 \begin{itemize}
@@ -235,19 +237,19 @@ Risikomanagement
 \item[•] Verläuft über die gesamte Zeit des Service Lifcycles.
 \end{itemize}
 \end{itemize}
-\begin{figure}[htb]\includegraphics[width=\columnwidth]{Images/16724a53-da3e-455d-a7a2-ef43ced2e51e.PNG}\caption{Zusammenspiel der einzelnen Elemente im Service-Lifecycle}
+\begin{figure}[htb]\includegraphics[width=\columnwidth]{Images/16724a53-da3e-455d-a7a2-ef43ced2e51e.PNG}\caption{Zusammenspiel der einzelnen Elemente im Service Lifecycle}
 ~\protect\cite[S.~18]{Beims.2015}\label{fig:zusammenspiel} \end{figure}
-Abbildung \ref{fig:zusammenspiel} stellt das Zusammenspiel der einzelnen Elemente des Service-Lifecycle dar und zeigt somit einmal den Ablauf einer Struktur von ITIL. Zunächst müssen die Business Anforderungen benannt werden. Dadurch kann in dieser Phase bereits sichergestellt werden, dass jede Stufe des Service Lifecycle am Business orientiert ist. Es werden Strategien entwickelt, Chancen und Möglichkeiten identifiziert sowie Ziele definiert, um die Gestaltung neuer IT Services anzutreiben. 
-Die Service Strategy umfasst fünf Prozesse, die durch unterschiedliche Prozessziele die Arten von Services welche Kunden bzw. am Markt angeboten werden sollen, identifizieren. Zur Unterstützung werden dazu zwei Modelle hinzugezogen. Zum einen das Kano Modell, das den Zusammenhang zwischen dem Erreichen bestimmter Eigenschaften eines Produktes / einer Dienstleistung und der erwarteten Zufriedenheit von Kunden beschreibt\footnote{https://de.wikipedia.org/wiki/Kano-Modell-cite-note-1, Zugriff: 13.06.2021}. Bei dem zweiten Modell handelt es sich um den 4P - Marketing Mix. Das Modell beschäftig sich mit der Produkt-, Preis-, Vertriebs- und Kommunikationspolitik. Das Ergebnis der Servise Strategy sind Service Modelle, eine Business Impact Analyse sowie weitere Dokumente\footnote{ITIL On A Page, ITIL TrainingZone.com}. \\
+Abbildung \ref{fig:zusammenspiel} stellt das Zusammenspiel der einzelnen Elemente des Service Lifecycles dar und zeigt somit einmal den Ablauf einer Struktur von ITIL. Zunächst müssen die Business Anforderungen benannt werden. Dadurch kann in dieser Phase bereits sichergestellt werden, dass jede Stufe des Service Lifecycles am Business orientiert ist. Es werden Strategien entwickelt, Chancen und Möglichkeiten identifiziert sowie Ziele definiert, um die Gestaltung neuer IT Services anzutreiben. 
+Die Service Strategy umfasst fünf Prozesse, die durch unterschiedliche Prozessziele die Arten von Services welche Kunden bzw. am Markt angeboten werden sollen, identifizieren. Zur Unterstützung werden dazu zwei Modelle hinzugezogen. Zum einen das Kano Modell, das den Zusammenhang zwischen dem Erreichen bestimmter Eigenschaften eines Produktes / einer Dienstleistung und der erwarteten Zufriedenheit von Kunden beschreibt\footnote{https://de.wikipedia.org/wiki/Kano-Modell-cite-note-1, Zugriff: 13.06.2021}. Bei dem zweiten Modell handelt es sich um den 4P - Marketing Mix. Das Modell beschäftig sich mit der Produkt-, Preis-, Vertriebs- und Kommunikationspolitik. Das Ergebnis der Service Strategy sind Service Modelle, eine Business Impact Analyse sowie weitere Dokumente\footnote{ITIL On A Page, ITIL TrainingZone.com}. \\
 Nachdem diese Stufe abgearbeitet ist, geht es weiter mit dem Service Design. Durch die Ergebnisse aus der Service Strategy können nun konkrete Anforderungen definiert werden. In dieser Phase werden neue Services entworfen, aber auch Änderungen und/oder Verbesserungen vorhandener Services durchgeführt. 
-Wie in Abbildung \ref{fig:zusammenspiel} dargestellt, handelt es sich in dieser Phase um einen iterativen Prozess. Die Anforderungen können um weitere Punkte ergänzt werden, diese Services müssen entwickelt und getestet werden, wodurch eine Evaluierung stattfindet. Je nach Ergebnis der Evaluierung müssen die nun bestehenden Services gegebenenfalls nochmal verändert oder verbessert werden. Auch diese Disziplin besteht aus acht Prozessen, die die Entwicklung und Veränderung bzw. Verbesserung von Servicen durchführt. Die Ergebnisse dieser Phase sind unter anderem die sogenannten Service-Level Agreements, Architektur oder Service Design Packages\footnote{ITIL On A Page, ITIL TrainingZone.com}. 
+Wie in Abbildung \ref{fig:zusammenspiel} dargestellt, handelt es sich in dieser Phase um einen iterativen Prozess. Die Anforderungen können um weitere Punkte ergänzt werden. Diese Services müssen entwickelt und getestet werden, wodurch eine Evaluierung stattfindet. Je nach Ergebnis der Evaluierung müssen die nun bestehenden Services gegebenenfalls nochmal verändert oder verbessert werden. Auch diese Disziplin besteht aus acht Prozessen, die die Entwicklung und Veränderung bzw. Verbesserung von Servicen durchführt. Die Ergebnisse dieser Phase sind unter anderem die sogenannten Service-Level Agreements, Architektur oder Service Design Packages\footnote{ITIL On A Page, ITIL TrainingZone.com}. 
 \\
-Die Service Transition verfolgt das Ziel, dass die entwickelten Services der letzten Phase aufgebaut und ausgerollt werden. Zudem werden durch geeignete Test- und Change Modelle sichergestellt, dass Änderungen an den Services koordiniert ablaufen. Die Ergebnisse dieser Phase sind unter anderem eine Content-Management-System, ein Service Knowledge System oder ein Change schedule.\\
-Nachdem die Services entwickelt sind und verschiedene Systeme bereitgestellt sind für einen reibungslosen Ablauf, dient die Service Operation Stufe dazu, dass die IT Services effektiv und effizient erbracht werden. In dieser Stufe müssen Anwenderfragen erfüllt und Probleme gelöst werden. Auch hier stehen fünf Prozesse zur Verfügung, die durch unterschiedliche Funktionen gemeinsam das Ziel erarbeiten. In dieser Phase entstehen vor allem technische Dokumentationen und auch Übungsmaterial\footnote{ITIL On A Page, ITIL TrainingZone.com}. 
+Die Service Transition verfolgt das Ziel, dass die entwickelten Services der letzten Phase aufgebaut und ausgerollt werden. Zudem werden durch geeignete Test- und Change Modelle sichergestellt, dass Änderungen an den Services koordiniert ablaufen. Die Ergebnisse dieser Phase sind unter anderem ein Content-Management-System, ein Service Knowledge System oder ein Change schedule.\\
+Nachdem die Services entwickelt und verschiedene Systeme für einen reibungslosen Ablauf  bereitgestellt sind, dient die Service Operation Stufe dazu, dass die IT Services effektiv und effizient erbracht werden. In dieser Stufe müssen Anwenderfragen erfüllt und Probleme gelöst werden. Auch hier stehen fünf Prozesse zur Verfügung, die durch unterschiedliche Funktionen gemeinsam das Ziel erarbeiten. In dieser Phase entstehen vor allem technische Dokumentationen und auch Übungsmaterial\footnote{ITIL On A Page, ITIL TrainingZone.com}. 
 \\
 Infolge der vorherigen Stufen können immer wieder Qualitätsmängel auftreten. Um diesen entgegen zu wirken und aus den Erfolgen sowie Misserfolgen der Vergangenheit zu lernen, setzt das Continual Service Improvement Methoden des Qualitätsmanagements ein\footnote{ITIL On A Page, ITIL TrainingZone.com}. 
 \subsubsection{Rollen im Service Lifecycle} 
-Aufgrund der hohen Anzahl an Phasen und Prozesse im Service Lifecycle, benötigt es die Definition von unterschiedlichen Rollen, die in den fünf Phasen verschiedene Aufgaben übernehmen. Der ITIL On Pager benennt vier generische Rollen innerhalb des Service Lifecycles: 
+Aufgrund der hohen Anzahl an Phasen und Prozesse im Service Lifecycle, benötigt es die Definition von unterschiedlichen Rollen, die in den fünf Phasen verschiedene Aufgaben übernehmen. Der ITIL One Pager benennt vier generische Rollen innerhalb des Service Lifecycles: 
 \begin{itemize}
 \item[•]\textbf{Service Owner}\\
 Verantwortlich gegenüber dem Kunden für die Initiierung, den Übergang und die laufende Wartung sowie Unterstützung eines  Dienstes und Support eines bestimmten Services ~\cite[S.~9]{KarlMichaelGauch.24.03.2021}.
@@ -287,16 +289,8 @@ darin besteht die Qualität und Quantität von IT-Services zu planen,
 überwachen und steuern [1]. An dieser Stelle wird beschrieben in
 welchen Bereichen von ITIL Qualitätssicherung verortet ist, welche Tätigkeiten sie umfasst und nach welchen Ansätzen diese strukturiert und ausgeführt werden können.
 
-
-\subsection{Qualitätsicherung in ITIL - Lara}
-Qualitätssicherung spielt im ITIL Framework eine zentrale Rolle.
-Dies ist darauf zurückzuführen, dass ein Grundgedanke von ITSM
-darin besteht die Qualität und Quantität von IT-Services zu planen,
-überwachen und steuern [1]. An dieser Stelle wird beschrieben in
-welchen Bereichen von ITIL Qualitätssicherung verortet ist, welche Tätigkeiten sie umfasst und nach welchen Ansätzen diese strukturiert und ausgeführt werden können.
-
 \subsubsection{Qualitätssicherung im ITIL-Prozess}
-Wie bereits in Kapitel 1 beschrieben, ist ITIL Service Management in sechs Bereiche aufgeteilt, Service
+Wie bereits in Kapitel \ref{sec:intro} beschrieben, ist ITIL Service Management in sechs Bereiche aufgeteilt, Service
 Strategy, Service Design, Service Transition, Service Operation, welche
 zeitlich nacheinander ablaufen, und Continual Service Improvement
 (CSI), welcher parallel zu den anderen Bereichen kontinuierlich
@@ -316,7 +310,7 @@ Im linken oberen Teil der Grafik ist zu sehen, dass im Kreislauf ein Prozessschr
 
 Im gesamten Prozess ist es dabei von großer Wichtigkeit, dass ein Verantwortlicher für den Prozess festgelegt wird, welcher als Ansprechpartner für andere Teams fungiert. Dieser Verantwortliche ist dabei auch verantwortlich für die weitere Rollenzuweisung, dem Management des Monitoring, der Sicherstellung der CSI-Aktivitäten und der Maßnahmenpriorisierung. Zudem erstellt und pflegt er den sogenannten Service Improvement Plan, in dem aufbauend auf regelmäßigen Terminen der Stakeholder vorgesehene Verbesserungsmaßnahmen dokumentiert werden. \cite{Beims.2015}
 
-\subsubsection{Testing}
+\subsubsection{Testing - René }
 \label{sec:testing_background}
 Der Testing Prozess stellt die Einhaltung des Vertrags, welcher
 mit dem Kunden über die Qualitätsanforderungen abgeschlossen
@@ -337,7 +331,7 @@ Teststrategie unabdingbar.
 
 Bei der Entwicklung einer geeigneten Teststrategie wurde sich an das Service V-Modell gehalten, welches in Abbildung \ref{fig:vmodell} dargestellt ist. Dieses definiert zu jedem Design- bzw. Entwicklungsschritt der einzelnen Services eine passenden Test. Dabei kann dieser Prozess in fünf Abschnitte unterteilt werden: \\
 
-Der \textit{Component Test} wird parallel zur eigentlichen Service Entwicklung definiert. Dieser prüft, ob die einzelnen Komponenten, bzw. eine Gruppe an Komponenten, die geforderte Spezifikationen erfüllt. Es wird die direkte technische Umsetzung der Services getestet. Der \textit{Release Package Test} testet anschließend, ob die erstellten Services fehlerfrei bereitgestellt (deployed) werden können. Der \textit{Operational Readiness Test} bezieht sich auf die Ressourcen, welche vorhanden sein müssen, um den Service bereitzustellen. Damit sind nicht nurtechnische, sondern auch Humanressourcen gemeint. Es wird also genau so danach gefragt, ob genügend Speicher vorhanden ist, wie auch, ob der Support für den jeweiligen Service geleistet werden kann. Der \textit{Acceptance Test} erfolgt im direkten Zusammenspiel mit dem Kunden. Hier wird sichergegangen, dass der Service alle gestellten Kundenanforderungen zufriedenstellend erfüllt. An letzter Stelle steht die \textit{Service Validierung}. Dazu wird geprüft, ob der Service alle Verträge einhält. 
+Der \textit{Component Test} wird parallel zur eigentlichen Service Entwicklung definiert. Dieser prüft, ob die einzelnen Komponenten, bzw. eine Gruppe an Komponenten, die geforderte Spezifikationen erfüllt. Es wird die direkte technische Umsetzung der Services getestet. Der \textit{Release Package Test} testet anschließend, ob die erstellten Services fehlerfrei bereitgestellt (deployed) werden können. Der \textit{Operational Readiness Test} bezieht sich auf die Ressourcen, welche vorhanden sein müssen, um den Servdice bereitzustellen. Damit sind nicht nurtechnische, sondern auch Humanressourcen gemeint. Es wird also genau so danach gefragt, ob genügend Speicher vorhanden ist, wie auch, ob der Support für den jeweiligen Service geleistet werden kann. Der \textit{Acceptance Test} erfolgt im direkten Zusammenspiel mit dem Kunden. Hier wird sichergegangen, dass der Service alle gestellten Kundenanforderungen zufriedenstellend erfüllt. An letzter Stelle steht die \textit{Service Validierung}. Dazu wird geprüft, ob der Service alle Verträge einhält. 
 
 \begin{figure}[th]
 \includegraphics[width=\columnwidth]{images/V-Modell.jpg}
@@ -381,10 +375,14 @@ Registrierung      & \begin{tabular}[c]{@{}l@{}}Person bekommt \\ nach Registrie
 \end{table*}  
 
 
+\begin{comment}
 \begin{itemize}
 \color{red}
 \item Weiterhin wurde der interne Service des Service Desks, das Redmine Portal, getestet. Hier wurde ähnlich vorgegangen
 \end{itemize}
+
+\end{comment}
+
 
 
 \subsubsection{Release Package Test}
@@ -393,7 +391,7 @@ Für die Durchführung der Release Package Tests ist in erster Linie die \textit
 
 \subsubsection{Operational Readiness Test}
 
-Da sich der \textit{Operational Readiness Test} auf Humanressourcen sowie technische Ressourcen bezieht, richtet er sich an das Service Desk und IT Operations Team. Zum einen wird getestet, ob das Service Desk in der Lage ist eingehende Anfragen zufriedenstellend zu bearbeiten. Zum anderen wird geprüft, ob die technischen Komponenten, welche einzelne Services zur Verfügung stellen, den gestellten Anforderungen gerecht werden. Das Qualitätssicherungsteam hat hierzu ähnlich wie bei den Release Package Tests KPIs definiert, welche von den beiden anderen Teams beobachtet werden können. Diese finden sich in den Tabellen \ref{table:ortsd} und \ref{table:ortitot}. Die KPIs wurden ebenfalls aus dem Service Portfolio abgeleitet, um die im selbigen gestellten Anforderungen zu erfüllen. 
+Da sich der \textit{Operational Readiness Test} auf Humanressourcen sowie technische Ressourcen bezieht, richtet er sich an das Service Desk und IT Operations Team. Zum einen wird getestet, ob das Service Desk in der Lage ist eingehende Anfragen zufriedenstellend zu bearbeiten. Zum anderen wird geprüft, ob die technischen Komponenten, welche einzelne Services zur Verfügung stellen, den gestellten Anforderungen gerecht werden. Das Qualitätssicherungsteam hat hierzu ähnlich wie bei den Release Package Tests KPIs definiert, welche von den beiden anderen Teams beobachtet werden können. Diese finden sich in den Tabellen \ref{tab:ortsd} und \ref{tab:ortitot}. Die KPIs wurden ebenfalls aus dem Service Portfolio abgeleitet, um die im selbigen gestellten Anforderungen zu erfüllen. 
 
 \begin{table*}[]
 \begin{tabular}{|l|l|l|}
