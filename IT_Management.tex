@@ -42,6 +42,7 @@
 
 
 \usepackage{xcolor}
+\usepackage{placeins}
 
 %%
 %% Submission ID.
@@ -472,23 +473,25 @@ Zusammenfassend bleibt zu sagen, dass ITIL eine gutes IT-Management-Framework bi
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{itmanagement.bib}
 
-
+\newpage
 \appendix
 \section{Anhänge}
 
 \subsection{Gantt-Diagramm}
-\begin{figure*}[th]
-\includegraphics[height=\textheight]{images/Gantt.jpg}
+\begin{figure*}[hbt!]
+\includegraphics[height=0.95\textheight]{images/Gantt.jpg}
 \caption{Projektplan - Qualitätssicherung}
 \label{fig:gantt}
 \end{figure*}
+\FloatBarrier
 
 \subsection{Ablaufplan Analyse Messergebnisse}
-\begin{figure*}[th]
-\includegraphics[height=\textheight]{Ablaufplan_Analyse_Messergebnisse.png}
+\begin{figure*}[thb!]
+\includegraphics[height=0.95\textheight]{Ablaufplan_Analyse_Messergebnisse.png}
 \caption{Ablaufplan Analyse Messergebnisse}
 \label{fig:analyseCSI}
 \end{figure*}
+\FloatBarrier
 
 \end{document}
 \endinput
